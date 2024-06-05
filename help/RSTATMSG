@@ -1,0 +1,3 @@
+Usage: RSTATMSG
+   Turns off stat messages in the partyline.
+   See also: STATMSG, SPYLIST

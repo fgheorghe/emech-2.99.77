@@ -1,0 +1,2 @@
+Usage: TOG [channel] AOP [0|1|on|off]
+   Toggles the auto-opping of users if verified.

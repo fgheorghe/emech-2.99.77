@@ -1,0 +1,5 @@
+Usage: SET [#channel] ENFPASS [0|1|on|off]
+.
+Enforce password use on a given channel.
+Commands attempted by un-passworded users in
+channels with this setting will be ignored.

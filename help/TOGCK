@@ -1,0 +1,2 @@
+Usage: TOG [channel] CK [0|1|on|off]
+   Toggles the kicking of CAPSers.

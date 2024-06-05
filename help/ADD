@@ -1,0 +1,12 @@
+.
+Add a user on a certain channel or all (*) channels.
+Parameters are:
+   handle     Name to reference the user by in other commands.
+   channel    Channel to give the user access on.
+   nick|mask  Current nick of the user to add.
+              Mask matching the users nick!user@host.
+   level      Privilige level, 0 to 100 for users, 200 for bots.
+              See LEVELS for more information.
+   password   Assign the user a password. Ignored for bots.
+.
+See also: DEL, HOST, PASSWD, SETPASS, USER

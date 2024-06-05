@@ -1,0 +1,3 @@
+Usage: KS <channel> <"string to kick on"> <"kick reason">
+   Adds a kicksay...the bot kicks users when they say the words
+   See also: KSLIST, RKS

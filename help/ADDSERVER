@@ -1,0 +1,5 @@
+ 
+Adds a server to the EnergyMechs internal server list.
+If no port is given, the default of 6667 is used.
+ 
+See also: SERVER, SERVERLIST, DELSERVER

@@ -1,0 +1,2 @@
+Usage: SET [channel] BT <value>
+   Which bans to unban when ban-limit is reached

@@ -1,0 +1,18 @@
+Usage: SPAWN [nick] [options]
+   Spawns a new bot with the given nickname. If no nickname
+   is given, one is chosen at random from randnicks.e.
+   The ircname option has to be put last if its used, since
+   everything after the ircname option is regarded as being
+   part of the ircname to be set. Thus, "-i monkey -z ."
+   would set the ircname to "monkey -z ."
+   Options:
+      -c channelname    Channel to join
+      -i ircname        Ircname to use
+      -l login          Login to use
+      -p port           Server port
+      -s servername     Server hostname
+      -v virtual        Virtual address to use
+      -w wingate:port   Wingate to use
+      -z command char   Command char to use
+   Example: SPAWN Lamah -s irc.lame.net -l fuxor -z [ -i Ahuh
+   See also: DIE

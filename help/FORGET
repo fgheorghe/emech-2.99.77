@@ -1,0 +1,3 @@
+Usage: FORGET <channel>
+   Deletes a channel from memory
+   See also: PART, JOIN

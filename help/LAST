@@ -1,0 +1,3 @@
+Usage: LAST [number of commands]
+   Shows the last commands done, and who did them
+   Default is 10, and goes up to 20

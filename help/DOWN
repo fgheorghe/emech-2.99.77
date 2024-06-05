@@ -1,0 +1,3 @@
+Usage: DOWN [channel]
+   Deop you on a channel.
+   See also: DEOP, UP, MODE

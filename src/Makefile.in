@@ -1,0 +1,201 @@
+#   
+#   EnergyMech, IRC bot software
+#   Copyright (c) 1997-2004 proton
+#
+#   This program is free software; you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation; either version 2 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program; if not, write to the Free Software
+#   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#
+
+INSTALLNAME =	mech
+INSTALLDIR =	..
+INSTALLMODE =	0700
+
+LDSCRIPT =	@ldscript@
+CPROF =		@cprof@
+LPROF =		@lprof@
+LIBS =		@libflags@
+PIPEFLAG =	@pipeflag@
+GDBFLAG =	@gdbflag@
+WARNFLAG =	@WARNFLAGS@
+OPTIMIZE =	@OPTIMIZE@
+
+CFLAGS =	$(PIPEFLAG) $(GDBFLAG) $(WARNFLAG) $(OPTIMIZE)
+LFLAGS =	$(PIPEFLAG) $(GDBFLAG)
+
+CC =		@CC@
+MV =		@MV@
+RM =		@RM@
+CHMOD =		@CHMOD@
+OBJCOPY =	@OBJCOPY@
+
+INCS =		config.h mcmd.h defines.h global.h h.h structs.h text.h
+
+OFILES =	alias.o auth.o bounce.o channel.o com-ons.o combot.o commands.o \
+		ctcp.o debug.o dns.o dynamode.o function.o greet.o help.o irc.o \
+		kicksay.o main.o net.o net_chan.o note.o notify.o parse.o \
+		perl.o prot.o redirect.o reset.o seen.o shitlist.o socket.o \
+		spy.o stats.o tcl.o toybox.o trivia.o uptime.o \
+		userlist.o vars.o web.o
+
+SRCFILES =	alias.c auth.c bounce.c channel.c com-ons.c combot.c commands.c \
+		ctcp.c debug.c dns.c dynamode.c function.c greet.c help.c irc.c \
+		kicksay.c main.c net.c net_chan.c note.c notify.c parse.c \
+		perl.c prot.c redirect.c reset.c seen.c shitlist.c socket.c \
+		spy.c stats.c tcl.c toybox.c trivia.c uptime.c \
+		userlist.c vars.c web.c
+
+#my:		clean mega
+
+all:		$(INSTALLNAME)
+
+gencmd:		gencmd.c config.h
+		$(CC) $(LFLAGS) -o $@ $<
+
+mcmd.h:		gencmd
+		./gencmd > mcmd.h
+
+install:	$(INSTALLNAME)
+		$(CHMOD) $(INSTALLMODE) $(INSTALLNAME)
+		$(MV) $(INSTALLNAME) $(INSTALLDIR)
+
+clean:		FORCE
+		$(RM) -f $(INSTALLNAME) gencmd mcmd.h core $(OFILES)
+
+$(INSTALLNAME):	$(OFILES)
+		$(CC) $(LFLAGS) -o $(INSTALLNAME) $(OFILES) $(LPROF) $(LIBS) $(LDSCRIPT)
+@oc@		objcopy -R .note -R .comment $(INSTALLNAME)
+
+mega:		$(SRCFILES) $(INCS) usage.h
+		$(CC) $(CFLAGS) -o $(INSTALLNAME) mega.c $(LPROF) $(LIBS) $(LDSCRIPT)
+		size $(INSTALLNAME)
+
+#
+#
+#
+
+alias.o:	alias.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+auth.o:		auth.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+bounce.o:	bounce.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+channel.o:	channel.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+com-ons.o:	com-ons.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+combot.o:	combot.c $(INCS) settings.h
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+commands.o:	commands.c $(INCS) settings.h
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+ctcp.o:		ctcp.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+debug.o:	debug.c $(INCS) settings.h
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+dns.o:		dns.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+dynamode.o:	dynamode.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+function.o:	function.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+greet.o:	greet.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+help.o:		help.c $(INCS) usage.h
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+irc.o:		irc.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+kicksay.o:	kicksay.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+main.o:		main.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+net.o:		net.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+net_chan.o:	net_chan.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+note.o:		note.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+notify.o:	notify.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+parse.o:	parse.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+perl.o:		perl.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+prot.o:		prot.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+redirect.o:	redirect.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+reset.o:	reset.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+seen.o:		seen.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+shitlist.o:	shitlist.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+socket.o:	socket.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+spy.o:		spy.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+stats.o:	stats.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+tcl.o:		tcl.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+toybox.o:	toybox.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+trivia.o:	trivia.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+uptime.o:	uptime.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+userlist.o:	userlist.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+vars.o:		vars.c $(INCS) settings.h
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+web.o:		web.c $(INCS)
+		$(CC) $(CFLAGS) -c $< $(CPROF)
+
+FORCE:

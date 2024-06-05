@@ -1,0 +1,4 @@
+Usage: SET [channel] CKL <level>
+   Sets the number of lines of caps allowed within a 5 second
+   period before the user will be kicked
+   Note: a line is considered all caps if 60% in it is in caps

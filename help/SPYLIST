@@ -1,0 +1,3 @@
+Usage: SPYLIST <channel>
+   Shows who's spying on a certain channel
+   See also: SPY, SPYMSG

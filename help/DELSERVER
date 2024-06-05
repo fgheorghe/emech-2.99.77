@@ -1,0 +1,7 @@
+Usage: DELSERVER <servername> [port]
+   Deletes a server from mechs internal server list.
+   If no port is given, it searches for a matching
+   server, ignoring port number unless there are
+   several servers in the list that matches, in which
+   case a port must be specified.
+   See also: SERVERLIST, ADDSERVER

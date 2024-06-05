@@ -1,0 +1,5 @@
+Usage: SET [channel] AVOICE <level>  
+   Sets the autovoice level.
+      0 - no autovoice
+      1 - voice +AV users as they join
+      2 - voice everyone as they join

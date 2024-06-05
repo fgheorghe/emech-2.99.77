@@ -1,0 +1,2 @@
+Usage: SET OPMODES <value>
+   Number of MODE +/-o's or +/-v's that can be done at a time.

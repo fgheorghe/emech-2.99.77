@@ -1,0 +1,9 @@
+ 
+   Show all current settings affecting the channel and bot.
+   Enter `default' for channel to view the default settings
+   used when new channels are created.
+ 
+   For more help on each setting displayed, use `HELP TOGxxx'
+   and `HELP SETxxx' where the `xxx' is the setting in question.
+ 
+   See also: SET, TOG

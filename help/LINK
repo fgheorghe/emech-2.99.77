@@ -1,0 +1,10 @@
+Usage: LINK [<UP|DOWN|ADD|DEL|PORT|AUTO> <...>]
+   LINK with no arguments lists all known entities.
+      UP <entity>       Try to link to <entity>
+      DOWN <entity>     Unlink <entity>
+      ADD <entity> <pass> <host> <port>
+                        Add an entity to the list of known entities.
+      DEL <entity>      Remove an entity from the list of known entities.
+      PORT <linkport>   Change the linkport.
+      AUTO <ON¦OFF>     Enable or disable autolinking.
+   See also: CMD

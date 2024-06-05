@@ -1,0 +1,12 @@
+Usage: ESAY [channel] <text>
+   Works like SAY with some enhancements. As the bot parses the text
+   it replaces predefined variables with their current value:
+      $cc         Current channel
+      $channels   Channels
+      $on         Ontime
+      $time       Current time
+      $tog(x)     Show current setting for toggle "x"
+      $up         Uptime
+      $ver        EnergyMech version
+      $links      Show active links 
+   See also: SAY

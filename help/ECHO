@@ -1,0 +1,3 @@
+Usage: ECHO <on|off>
+   Turns on and off partyline echoing of your own messages.
+   See also: CHAT

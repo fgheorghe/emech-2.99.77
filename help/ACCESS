@@ -1,0 +1,5 @@
+. 
+Show someones access level. If no arguments are given, the bot
+will display your own access level.
+.
+See also: USERLIST

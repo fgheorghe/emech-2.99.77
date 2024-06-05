@@ -1,0 +1,4 @@
+Usage: SERVER <servername> [port] [login] [ircname]
+   Makes the bot switch servers. You can also specify
+   a new login and ircname for the bot.
+   See also: CSERV, NEXTSERVER, SERVERLIST

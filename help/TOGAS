@@ -1,0 +1,2 @@
+Usage: TOG [channel] AS [0|1|on|off]
+   Toggles auto-shitlisting on a channel.

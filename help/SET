@@ -1,0 +1,6 @@
+.
+Change a setting. Use `*' to change the setting for all channels.
+For more help on each setting, use `HELP SETxxx' where `xxx' is
+the setting in question.
+.
+See also: TOG, REPORT

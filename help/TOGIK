@@ -1,0 +1,3 @@
+Usage: TOG [channel] IK [0|1|on|off]
+   Toggles the kicking of idle lusers on a certain channel.
+   See also: SETIKT

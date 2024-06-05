@@ -1,0 +1,3 @@
+Usage: CSERV
+   Shows current server the bot is connected to.
+   See also: SERVERLIST, NEXTSERVER, SERVER

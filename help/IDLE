@@ -1,0 +1,3 @@
+Usage: IDLE <nick>
+   Show how long a person has been idle.
+   See also: SHOWIDLE

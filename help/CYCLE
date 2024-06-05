@@ -1,0 +1,3 @@
+Usage: CYCLE <channel> 
+   Quickly part and rejoin a channel.
+   See also: JOIN, PART

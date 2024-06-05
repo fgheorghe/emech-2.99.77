@@ -1,0 +1,3 @@
+Usage: INSULT [nick|channel]
+   Send a random insult to a user or channel.
+   See also: PICKUP

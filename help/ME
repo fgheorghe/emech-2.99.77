@@ -1,0 +1,3 @@
+Usage: ME [channel] <action>
+   Make the bot do an action on a certain channel
+   See also: SAY, ESAY, MSG

@@ -1,0 +1,3 @@
+Usage: JOIN <channel> [key]
+   Makes the bot join a channel
+   See also: CYCLE, PART

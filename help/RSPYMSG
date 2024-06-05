@@ -1,0 +1,5 @@
+Usage: RSPYMSG [nick]
+   Stop redirecting private messages teh bot receives
+   Note: If a nick is given, that person will be removed from
+         receiving the private messages
+   See also: SPYMSG, SPY, SPYLIST

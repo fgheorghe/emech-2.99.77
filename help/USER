@@ -1,0 +1,16 @@
+.
+Change user settings.
+Prefix flags with a "-" to disable them or a "+" to enable them.
+.
+Flags:
+   AO         auto-op on/off
+   AV         auto-voice on/off
+   BNC        enable a user to use the bouncer feature
+   ECHO       partyline echo on/off
+   P<level>   change protection level (0-4)
+              If disabling (-P), level is not needed.
+.
+Example: USER owner +ao -av
+   Enables user autoop and disables autovoice for user "owner".
+.
+See also: PROTECTION, SETPROT, TOGAOP

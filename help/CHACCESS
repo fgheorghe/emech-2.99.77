@@ -1,0 +1,3 @@
+Usage: CHACCESS <command> [level]
+   Changes the level needed to do a command.
+   See also: LOADLEVELS, SAVELEVELS

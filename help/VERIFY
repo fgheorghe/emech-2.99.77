@@ -1,0 +1,3 @@
+Usage: VERIFY <password>
+   Authenticate yourself with the bot.
+   See also: PASSWD, SETPASS

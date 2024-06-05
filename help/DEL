@@ -1,0 +1,3 @@
+Usage: DEL <handle>
+   Deletes someone from the bots userlist.
+   See also: DEL, HOST, USERLIST

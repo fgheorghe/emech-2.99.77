@@ -1,0 +1,3 @@
+Usage: MODE <channel> <modes>
+   Set or unset channel modes.
+   See also: OP, DEOP, VOICE, UNVOICE

@@ -1,0 +1,91 @@
+,-----------------------------------------------------------------.,---------------------------.
+|   ,-----; ,------,     ,-----; ,-------,    ,----,     ,  ,-.   |      ,--------------.      |
+|  /  ,---' |   ,.  \   /  ,---' |   ,--, \  /  ,-. \   /|  |  \  |     /          ,-.   \     |
+| |   |___  |   | \  \ |   |___  |   |__|  ;|   | `~'  / |  |   | |     `---------'   \   \    |
+| |   ,--'  |   |  |  ||   ,--'  |   |--; < |   | ,--./   `-'   | |                   /    \   |
+| |   |__,-,|   |  |  ||   |__,-,|   |  |  ||   | \  |\___.     | |                  /     /   |
+| |        ||   |  |  ||        ||   |  |  ||   `~'  |     \    | |      ,----------'     /    |
+| |        ||   |  | / |        ||   |  | / |        |      |   | |      \            _   \    |
+| `~~~~~`\/ `---'  `/  `~~~~~`\/ `---'  `/  `/~~~~~~'       |,--' |       \_________,' \   \   |
+|          ,---,    ,---,  ,-----;   ,----.    ,-.  ,--.          |                    /    \  |
+|          |    \  /    | /  ,---'  /  ,--'   /  |  |  |          |                   /      | |
+|          |     \/     ||   |___  |   |     |   |__|  |          |                  /       | |
+|          |   |\  /|   ||   ,--'  |   |     |   ,--.  |          |  ______________,'        | |
+|          |   | \/ |   ||   |__,-,|   |   /||   |  |  |          | /                       /  |
+|          |   |    |   ||        ||   `--' ||   |  |  |          | \                      /   |
+|          |   |    |   ||        ||        ||   |  | /           |  \                    /    |
+|          `---'    `---'`~~~~~`\/ `\___/~~~'`---'  `/            |   \_________________,'     |
+`-----------------------------------------------------------------'`---------------------------'
+
+Compiling?
+~~~~~~~~~~
+To compile the source:
+
+1) Uncompress the source code distribution archive.
+
+2) cd emech-2.99
+-- Since you are reading this file, you have most likely already come to this point.
+
+3) ./configure
+-- This script will prompt you for features to include or exclude,
+   going with the default isnt a bad idea.
+
+4) make clean install
+
+If all went well you should now have an executable called ``mech''.
+
+---*---
+
+Setup?
+~~~~~~
+
+... this needs new documenting for E3 ...
+
+---*---
+
+Updated Files?
+~~~~~~~~~~~~~~
+The main distro-site for the Starglider Class is:
+
+   http://www.energymech.net/index.html
+
+You can also find the files on ftp at:
+
+   ftp://ftp.energymech.net/pub/energymech/
+
+---*---
+
+More Help?
+~~~~~~~~~~
+
+Read the  website for  goodness sake!  Thats what  its there  for!
+
+		  #emech is not a help channel
+
+If you HAVE to ask  a question in #emech  then make damn sure that
+its not covered by the website  documentation and try to ask it in
+a way so that  we dont have  to type half  a book just to tell you
+the answer.
+
+Do NOT ask to be guided in #emech.  We will under no circumstances
+help you compile, configure or run a bot.
+
+We absolutely hate people who come into the channel asking utterly
+simple  questions like  `Why doesnt  my bot connect',  `Whats  the
+command to add a user', etc.  If you manage to stay in the channel
+after asking something like that its simply because we're too damn
+lazy to kickban your ass.
+
+We will NOT teach  you how to work with UNIX  shells or how to use
+your mech, you have to learn that by yourself. Im noting this here
+since it seems to be a common misconception that we would.
+
+In short:
+
+THIS SOFTWARE IS PROVIDED AS IS. YOU ARE ENTIRELY ON YOUR OWN WHEN
+IT COMES TO CONFIGURING AND USING IT.
+
+---*---
+
+proton, August 18th, 2001.
+<mailto:proton@energymech.net>

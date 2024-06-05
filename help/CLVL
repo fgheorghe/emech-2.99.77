@@ -1,0 +1,3 @@
+Usage: CLVL <handle> <level>
+   Changes the level of a user.
+   See also: ACCESS

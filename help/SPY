@@ -1,0 +1,5 @@
+Usage: SPY <channel> [channel]
+   Spy on a certain channel
+   Note: if a channel is given at the end...the bot will redirect
+         to that channel instead of to you
+   See also: RSPY, SPYMSG, SPYLIST

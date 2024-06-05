@@ -1,0 +1,2 @@
+Usage: CTCP <nick|channel> <request>
+   Send a CTCP request to a user.

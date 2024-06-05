@@ -1,0 +1,2 @@
+Usage: SET [channel] AUB <value>
+   Erases old bans automatically, this sets how old they have to be.

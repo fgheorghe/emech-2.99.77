@@ -1,0 +1,3 @@
+user		example
+mask		*!*@*.example.com
+opt		u100 *

@@ -1,0 +1,10 @@
+Usage: USERLIST [+minlevel] [-maxlevel] [#channel] [usermask] [-B] [-C]
+   Shows the userlist
+   Options:
+     +minlevel    List users with access minlevel or greater.
+     -maxlevel    List users with access maxlevel or less.
+     #channel     List users with access on #channel.
+     usermask     List users matching usermask.
+     -B           List bots.
+     -C           List channel users (users with no global access).
+   See also: ACCESS, USTATS

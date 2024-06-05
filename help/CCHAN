@@ -1,0 +1,3 @@
+Usage: CCHAN [channel]
+   Return or set the current channel.
+   See also: JOIN, PART, CHANNELS

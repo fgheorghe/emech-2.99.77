@@ -1,0 +1,7 @@
+ 
+Create or delete a command alias. Insert the string `%s'
+in the replacement format. That string will be replaced
+by any arguments supplied to the alias. The string `%s'
+may only occur once in the replacement string.
+Aliases may call other aliases and aliases can be used
+to replace built in commands.
